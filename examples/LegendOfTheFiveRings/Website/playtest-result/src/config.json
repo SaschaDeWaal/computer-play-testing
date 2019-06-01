@@ -1,0 +1,11 @@
+{
+  "couchDb": {
+    "host": "playtest.developersascha.nl",
+    "port": "5984",
+    "protocol": "http",
+    "auth": {
+      "user": "admin",
+      "pass": "admin"
+    }
+  }
+}

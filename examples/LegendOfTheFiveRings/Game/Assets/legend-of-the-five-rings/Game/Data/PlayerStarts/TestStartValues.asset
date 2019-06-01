@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3834e72a3fb446d2928ae94a2bd52779, type: 3}
+  m_Name: TestStartValues
+  m_EditorClassIdentifier: 
+  clan: {fileID: 11400000, guid: 9e2023ba0028e0b4da310889cbd51b7b, type: 2}
+  dynastyDeck:
+  - {fileID: 11400000, guid: 74c67109542750540bac785ed2a952d3, type: 2}
+  - {fileID: 11400000, guid: 5a58ed2e1ef98f049a352c927fa1dffe, type: 2}
+  - {fileID: 11400000, guid: e4ebe43be71df6a4280f84a3d2b59b2b, type: 2}
+  - {fileID: 11400000, guid: 40b51dd36de64fa4e9ce5f02c1e258ce, type: 2}
+  - {fileID: 11400000, guid: 5dd418268dca3014d897b3b28b43984a, type: 2}
+  - {fileID: 11400000, guid: 5c6b853586e4d3a4481410192b16020b, type: 2}
+  - {fileID: 11400000, guid: f347c244fbd9ece469783fbde74fe1c1, type: 2}
+  - {fileID: 11400000, guid: e5b18412864e6da46832a35aeb988e15, type: 2}
+  - {fileID: 11400000, guid: 768b136724e678741bd3c29daab4bb77, type: 2}
+  - {fileID: 11400000, guid: ac035d3446554e449aca738b93796d2a, type: 2}
+  conflictDeck:
+  - {fileID: 11400000, guid: 3a72631d65ccc1c4db3875cb048cdf8b, type: 2}
+  - {fileID: 11400000, guid: 9b36640caf6d8994b962dc150e40425c, type: 2}
+  - {fileID: 11400000, guid: 2d2cc0900a9343d4fa773db0efbc4942, type: 2}
+  - {fileID: 11400000, guid: 3a72631d65ccc1c4db3875cb048cdf8b, type: 2}
+  - {fileID: 11400000, guid: c0e9d422cd1f24e459ebdf29f6729c69, type: 2}
+  - {fileID: 11400000, guid: 9a199a2355627f843b18cd09bbf85390, type: 2}
+  - {fileID: 11400000, guid: d1de7f76b424e9c45aacc6c8096f1763, type: 2}
+  - {fileID: 11400000, guid: cc681b0f5ba79654a915b884fc2dda16, type: 2}
+  - {fileID: 11400000, guid: c0e9d422cd1f24e459ebdf29f6729c69, type: 2}
+  - {fileID: 11400000, guid: 9b36640caf6d8994b962dc150e40425c, type: 2}
+  - {fileID: 11400000, guid: 0ce6718202e72dc4c8c15cd64b4e3673, type: 2}
+  - {fileID: 11400000, guid: 9a199a2355627f843b18cd09bbf85390, type: 2}
+  - {fileID: 11400000, guid: d1de7f76b424e9c45aacc6c8096f1763, type: 2}
+  - {fileID: 11400000, guid: cc681b0f5ba79654a915b884fc2dda16, type: 2}
+  provinceCards:
+  - {fileID: 11400000, guid: 51a709001064c354794ffc5204fd6937, type: 2}
+  - {fileID: 11400000, guid: fad13d84dbaa6704081f3af72ea4a7ef, type: 2}
+  - {fileID: 11400000, guid: a08a690abe36a1740a87d11af6e134a4, type: 2}
+  - {fileID: 11400000, guid: 9681084d0cdb0714692da886128c787b, type: 2}
+  - {fileID: 11400000, guid: 043a6b5965169b348968a94de25edabe, type: 2}
+  strongholdCard: {fileID: 11400000, guid: 614cb5b6a5bfefc4a9019350e1de296f, type: 2}

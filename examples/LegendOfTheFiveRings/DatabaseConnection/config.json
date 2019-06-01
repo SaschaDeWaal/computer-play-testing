@@ -1,0 +1,13 @@
+{
+  "server": {
+    "port": 3500
+  },
+  "couchDb": {
+    "host": "localhost",
+    "port": "5984",
+    "auth": {
+      "user": "admin",
+      "pass": "admin"
+    }
+  }
+}

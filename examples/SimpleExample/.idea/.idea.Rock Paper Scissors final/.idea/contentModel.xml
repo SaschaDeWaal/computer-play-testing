@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Beatnory\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Beatnory\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Rock Paper Scissors final.-384174733.00" t="ExcludeRecursive" />
+    <e p="D:\git\Graduation-Project\Documentation\Tutorial\Example Project\Rock Paper Scissors final" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ComputerPlayTestFramework" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="ConditionalFieldAttribute.cs" t="Include" />
+              <e p="EnumFlagDrawer.cs" t="Include" />
+            </e>
+            <e p="DataContainers" t="Include">
+              <e p="GameStatus.cs" t="Include" />
+              <e p="PlayTestResult.cs" t="Include" />
+            </e>
+            <e p="Helpers" t="Include">
+              <e p="JsonHelper.cs" t="Include" />
+            </e>
+            <e p="Logic" t="Include">
+              <e p="PlayerAction.cs" t="Include" />
+              <e p="PlayTester.cs" t="Include" />
+              <e p="PlayTestManager.cs" t="Include" />
+              <e p="PlayTestObjectTracker.cs" t="Include" />
+              <e p="PlayTestObserver.cs" t="Include" />
+            </e>
+            <e p="PlayTestTickComponentExample.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="EffectCards" t="Include">
+            <e p="BaseWeapon.cs" t="Include" />
+            <e p="Hamer.cs" t="Include" />
+            <e p="Hand.cs" t="Include" />
+            <e p="Laser.cs" t="Include" />
+            <e p="Pistol.cs" t="Include" />
+            <e p="Sword.cs" t="Include" />
+          </e>
+          <e p="Game" t="Include">
+            <e p="Game.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="WonState.cs" t="Include" />
+          </e>
+          <e p="PlayTest" t="Include">
+            <e p="MyGameStatus.cs" t="Include" />
+            <e p="MyObjectTracker.cs" t="Include" />
+            <e p="MyObserver.cs" t="Include" />
+            <e p="MyPlayTester.cs" t="Include" />
+            <e p="MyPlayTestManager.cs" t="Include" />
+            <e p="MyTickComponent.cs" t="Include" />
+            <e p="MyWeaponResult.cs" t="Include" />
+            <e p="PlayWeaponPlayerAction.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="GameText.cs" t="Include" />
+            <e p="ScoreText.cs" t="Include" />
+            <e p="WeaponButton.cs" t="Include" />
+            <e p="WeaponsPanel.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Rock Paper Scissors final.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
