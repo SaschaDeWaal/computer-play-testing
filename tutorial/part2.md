@@ -22,7 +22,7 @@ There are multiple moments in the game where the player is able to do an action.
 
 Every time the player execute an action, and this action is applied to the game, a new status will appear with different actions that the player can do. 
 
-![options](.\images\options.png)
+![options](images/options.png?raw=true)
 
 The blue dot on the left side of the diagram represents the starting point of the game. This is the point where the game is set up. Cards and starting values are set here. After the start, we see the first game status. At this status, a few actions can be executed by the player. In the diagram you see that 3 actions are possible. If a action is chosen and executed, a new status will appear with new possible actions.
 
@@ -34,7 +34,7 @@ Because we want to test different actions with different scenario's, we are goin
 
 ### Framework overview
 
-Below you see the uml diagram of the framework.![diagram](.\images\diagram.png)
+Below you see the uml diagram of the framework.![diagram](images/diagram.png?raw=true)
 
 
 
@@ -42,7 +42,7 @@ Below you see the uml diagram of the framework.![diagram](.\images\diagram.png)
 
 ### Game status
 
-![GameStatus](.\images\GameStatus.png)
+![GameStatus](images/GameStatus.png?raw=true)
 
 It all starts with the status of the game. We need to know its  current status in order to know what the player can do, and we need to  jump from status to status so we test different scenarios in the game.  So the status of the game should be stored in `GameStatus`.
 
@@ -56,7 +56,7 @@ There are at least three strategies possible for this
 
 ### Game Action
 
-![playerAction](.\images\playerAction.png)
+![playerAction](images/playerAction.png?raw=true)
 
 This might be the most important part of the system, The action. You could compare them to controllers in a m-v-c system. They can execute a single action like play a card, or start a battle. A `PlayerAction` should also know if this can be executed with the current `GameStatus`, so we can simply loop thought all actions in the game and look which ones are possible, and which one are not.
 
@@ -70,7 +70,7 @@ Every tick, all `PlayTesters` will be asked what action it wants to test in the 
 
 Selecting important actions can be done inside the `PlayTester`, but it is also possible to give every `PlayerAction` a (dynamic) weight. You could order them on this weight and only select  the best 4. Limiting actions can improve the performance of the playtest and pushing the test more forward.
 
-![weighSelection](.\images\weighSelection.png)
+![weighSelection](images/weighSelection.png?raw=true)
 
 Random selecting a few actions is also a option. This way you test a mix of actions, and you will play more rounds and games.
 
@@ -78,7 +78,7 @@ Whatever method you like to choose, Keep in mind that you need to test variation
 
 ### TickComponent
 
-![TickComponent](.\images\TickComponent.png)
+![TickComponent](images/TickComponent.png?raw=true)
 
 In my first version everything was turn based. But the problem is that although the game I am testing with (Legend of the five rings: the card game) is turned based, there are still actions you can do when it's not your turn. If you think about it, for many games this is the case. With monopoly you can trade with the person in turn, or in my case, you can prevent an attack with a card when it's not your turn.
 
@@ -88,7 +88,7 @@ So I changed the system a bit, and I started working with Ticks. in Unity I crea
 
 ### PlayTestManager
 
-![manager](.\images\manager.png)
+![manager](images/manager.png?raw=true)
 
 The last part to be able to play it, is the manager. The manager, like the name is saying, managed the playtest. It will receive ticks from the `TickComponent`. Every tick it will jump to a Status, all `Playtesters` are asked what kind of action they like to test with this status. For every selected action, the status will be copied with serialization and the action will be executed to that new copied status. The status will then be added to the queue for a later tick.
 
@@ -112,13 +112,13 @@ So, now we have all elements in place to play the game, we can start focusing on
 
 ### Observer and Trackers
 
-![trackers](.\images\trackers.png)
+![trackers](images/trackers.png?raw=true)
 
 Now the computer can play the game, however we are building this to test the game. To do this, we need a Observer. This object will observe the play, and generate results based on what it sees and what it test. Every start of the Tick, and when an action is executed the observer get a chance to observe, and store data if it's think it is useful.
 
 Sometimes you also want to be able to look at an object over time and then make a judgment over it. For this purpose, we have `ObjectTrackers`. These are objects created by the observer. They are stored with the game status so they will follow an object, even if we jump to another status. When there is a new branch, the object tracker will be copied. So the object will be tracked until the end.
 
-![trackerLife](.\images\trackerLife.png)
+![trackerLife](images/trackerLife.png?raw=true)
 
 
 
@@ -128,7 +128,7 @@ So why not store the `GameStatus`? I started with doing this, but the problem is
 
 ### Store and showing the data
 
-![inkscape_2019-04-18_09-38-55](.\images\inkscape_2019-04-18_09-38-55.png)
+![inkscape_2019-04-18_09-38-55](images/inkscape_2019-04-18_09-38-55.png?raw=true)
 
 So the framework is ready. But you still need a place to store and view the data. You could save it to the hard disk, but a better solution would be to store it to a database. By using a database, you could run the test on multiple computers at the same time and store all data together. I used CoucheDB as database because the `ResultObjects` will be serialized to JSON.
 
@@ -138,9 +138,9 @@ Viewing the data can be done with a website. I build a React website with **crea
 
 ### Next up
 
-**Part 3: Example of implementing the framework**
+[**Part 3: Example of implementing the framework**](part3.md)
 
-**Part 4: Tips, Tricks, and problem solvers** 
+[**Part 4: Tips , Tricks,and problem solvers**](part4.md)
 
 
 

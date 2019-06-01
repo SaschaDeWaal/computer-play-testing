@@ -8,7 +8,7 @@ This is part 3 of 4 about preventing broken games with computer play testing. If
 
 Introduction
 
-In this part we will look at how to implement this framework into your game. For this example, I have made a simple game to test it on. You can view and download it here:
+In this part we will look at how to implement this framework into your game. For this example, I have made a simple game to test it on. You can view and download it [here](https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples/SimpleExample).
 
 It's a two player game. Each player receives 5 different weapons. Every weapon has a power level and a lifetime. At the start of the round each player selects a single weapon and places it in the battle area. The player with the most power points (all weapons summed up together) will win that round, and gets 1 point.
 
@@ -26,7 +26,7 @@ These are the weapons that can be played.
 | Laser  | 8     | 2        |
 | Hamer  | 1     | 12       |
 
-![ExampleGame](.\images\ExampleGame.gif)
+![ExampleGame](images/ExampleGame.gif?raw=true)
 
 
 
@@ -245,7 +245,7 @@ public class MyTickComponent : MonoBehaviour {
 
 So, if you add the component to the scene, enable the test and start the game you should see the game playing.
 
-![FirstExampleRunning](.\images\FirstExampleRunning.gif)
+![FirstExampleRunning](images/FirstExampleRunning.gif?raw=true)
 
 
 
@@ -382,19 +382,19 @@ public class MyPlayTestManager : PlayTestManager<MyPlayTester, MyGameStatus, MyO
 
 So if you run it now, you will see the result object in the log.
 
-![resultLog](.\images\resultLog.gif)
+![resultLog](images/resultLog.gif?raw=true)
 
 The logs you see are the results of the test. It is the data that you won by running the test. Right now, it is logged but you should save this on the hard disk or store it to a database.
 
 This tutorial is about computer play testing and not about storing and showing data. I am sure you can find plenty of other tutorial about this. For my test, I created with NodeJS a socket server that is connected to CouchDB. The test script sends the data via socket to the NodeJS server that then stores the data there.
 
-A website build with react can then show you the data with nice graphs from the internet. You can find this code here if you would like to see it: but I know there are better tutorials online about this topic.
+A website build with react can then show you the data with nice graphs from the internet. You can find this code [here](https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples/LegendOfTheFiveRings/Game) if you would like to see it: but I know there are better tutorials online about this topic.
 
 
 
 ### Next up
 
-**Part 4: Tips, Tricks, and problem solvers** 
+[**Part 4: Tips , Tricks,and problem solvers**](part4.md)
 
 
 

@@ -59,7 +59,7 @@ When I tested with designers, they all wanted to see how long a game would take.
 
 The test is worth nothing without having a good visualization of the results. Results should be the main focus. There is a lot of information online about how to visualize data. My advice is to work with a website. Yes it's might not be your thing, but think about it. Web is made to show a lot of data. There are so many good, free graphs you could use. 
 
-![chrome_2019-05-15_12-20-06](.\images\chrome_2019-05-15_12-20-06.png)
+![chrome_2019-05-15_12-20-06](images/chrome_2019-05-15_12-20-06.png?raw=true)
 
 In my project I generated a cost heatmap and a win ratio. I used that to compare the objects. You could of course also generate a cost curve, or a really big list. But the UI is really depending on what the designer needs.
 

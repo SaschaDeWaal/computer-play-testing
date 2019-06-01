@@ -8,13 +8,13 @@
 
 **Interesting for** Game Developers, Game Designers or system designers that are (going to) build a strategy or card game with a lot of in game objects. Especially if the objects influence each other. 
 
-**What you need** Programing knowledge, Unity5, a Game https://github.com/SaschaDeWaal/computer-play-testing
+**What you need** Programing knowledge, Unity5. Final code, framework and examples can be found here: https://github.com/SaschaDeWaal/computer-play-testing
 
 **Time of tutorial** 4 parts, Total 30 - 45 min of reading
 
 **Contact Details** Any questions or updates of your cool project info@developersascha.nl
 
-**Example projects** https://github.com/SaschaDeWaal/computer-play-testing
+**Example projects** https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples
 
 ### Introduction
 
@@ -30,7 +30,7 @@ As a game programmer, I have always been interested in abstract systems. I have 
 
 ### What is Computer play testing? And why would you? 
 
-![l5rExample](.\images\l5rExample.gif)
+![l5rExample](images/l5rExample.gif?raw=true)
 
 So what do I mean with 'Computer play testing'? it's like a play test with humans, where you let them play the game and learn on the fly about the balance and the game mechanics. But this time the computer is playing the game instead of a human. 
 
@@ -46,7 +46,7 @@ The framework that we are going to build must be programmed inside the game. Eve
 
 ### Computer play testing as a measurement tool
 
-![website](.\images\website.png)
+![website](images/website.png?raw=true)
 
 Every game is different, so every game needs to have a different balancing method. I believe that the designer of that game know's best when it is balanced, and what information he needs to achieve this goal. So I focused on using the computer playtest as a measurement tool. It doesn't say if the game is correctly balanced, but it does show stats that the designer can help to see if it is balanced. So It's an additional tool to help designers.
 
@@ -54,11 +54,11 @@ Every game is different, so every game needs to have a different balancing metho
 
 ### Next up
 
-**Part 2: Deep look at the framework**
+[**Part 2: Deep look at the framework** ](part2.md)
 
-**Part 3: Example of implementing the framework**
+[**Part 3: Example of implementing the framework**](part3.md)
 
-**Part 4: Tips , Tricks,and problem solvers**
+[**Part 4: Tips , Tricks,and problem solvers**](part4.md)
 
 
 
