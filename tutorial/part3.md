@@ -6,7 +6,7 @@ This is part 3 of 4 about preventing broken games with computer play testing. If
 
 
 
-Introduction
+### Introduction
 
 In this part we will look at how to implement this framework into your game. For this example, I have made a simple game to test it on. You can view and download it [here](https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples/SimpleExample).
 
@@ -69,7 +69,7 @@ public class MyGameStatus : GameStatus {
 
 
 
-Next we need to define the actions. With this game there are up to 5 possible actions. For example, play Sword or play Pistol from hand. These actions are very similar, Place a weapon from hand to the battle area. So we can make a single action for all 5 items. We can add the selected weapon to the constructor.
+Next we need to define the actions. With this game there are up to 5 possible actions. For example, play Sword or play Pistol from hand. These actions are very similar because in both we place a weapon from hand to the battle area. Thus we can make a single action for all 5 items. We can add the selected weapon to the constructor.
 
 Please, note that we store the index instead of the weapon object. This is because after we checked if this action is executable, we will copy the `GameStatus` and execute this action in this new copied status. So we need to execute it to a different object.
 
@@ -111,7 +111,7 @@ public class PlayWeaponPlayerAction : PlayerAction {
 
 
 
-And of course we need a `Playtester` who will decide what action we are going to test. In this example game, it doesn't really matter. All actions are always possible. But when you have more complex gameplay, not all actions can be executed. This player will look at the actions, and return actions that can be executed.
+And of course we need a `Playtester` who will decide what action we are going to test. In this example game, it doesn't really matter. All actions are always possible. But when you have a more complex game, not all actions can be executed. This player will look at the actions, and return actions that can be executed.
 
 ```c#
 using System;
@@ -243,13 +243,13 @@ public class MyTickComponent : MonoBehaviour {
 
 
 
-So, if you add the component to the scene, enable the test and start the game you should see the game playing.
+So, if you add the component to the scene, enable the test, and start the game you should see the game playing.
 
 ![FirstExampleRunning](images/FirstExampleRunning.gif?raw=true)
 
 
 
-Now the computer can play the game, however we are building this to test the game. We first need to know what we do need. In this example, we are going to look at how many times a weapon did win. So first we need to build the result object. This is a object that contains the result, and our system will serialize to json and will store it for later use.
+Now the computer can play the game, however we are building this to test the game. We first need to know what information we need. In this example, we are going to look at how many times a weapon did win. So first we need to build the result object. This is an object that contains the result, and our system will serialize to json and will store it for later use.
 
 ```c#
 using System.Runtime.Serialization;
@@ -278,7 +278,7 @@ public class MyWeaponResult : PlayTestResult {
 
 
 
-We also need a tracker. When a weapon is played, we want to keep watching it until it's life has ended. When watching, we will count the amount of times it did win, and the amount it battled.
+We also need a tracker. When a weapon is played, we want to keep watching it until it's life has ended. When watching, we will count the amount of times it did win, and the amount it has battled.
 
 ```c#
 using System.Runtime.Serialization;
@@ -327,7 +327,7 @@ public class MyObjectTracker: PlayTestObjectTracker {
 
 
 
-We need a observer. A observer is a object that observes the game. It can do different things, but for now it will only create our trackers. Every time when the `playtester` plays a weapon, we will create a new tracker.
+We need an observer. An observer is an object that observes the game. It can do different things, but for now it will only create our trackers. Every time when the `playtester` plays a weapon, we will create a new tracker.
 
 ```c#
 using ComputerPlayTesting;
@@ -384,11 +384,11 @@ So if you run it now, you will see the result object in the log.
 
 ![resultLog](images/resultLog.gif?raw=true)
 
-The logs you see are the results of the test. It is the data that you won by running the test. Right now, it is logged but you should save this on the hard disk or store it to a database.
+The logs you see are the results of the test. It is the data that you collected by running the test. Right now, it is logged but you should save this on the hard disk or store it to a database.
 
 This tutorial is about computer play testing and not about storing and showing data. I am sure you can find plenty of other tutorial about this. For my test, I created with NodeJS a socket server that is connected to CouchDB. The test script sends the data via socket to the NodeJS server that then stores the data there.
 
-A website build with react can then show you the data with nice graphs from the internet. You can find this code [here](https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples/LegendOfTheFiveRings/Game) if you would like to see it: but I know there are better tutorials online about this topic.
+A website build with react can then show you the data with nice graphs from the internet. You can find this code [here](https://github.com/SaschaDeWaal/computer-play-testing/tree/master/examples/LegendOfTheFiveRings/Game), but I know there are better tutorials online about this topic.
 
 
 

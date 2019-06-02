@@ -8,7 +8,7 @@ This is part 2 of 4 about preventing broken games with computer play testing. If
 
 
 
-###Introduction
+### Introduction
 
 In this tutorial we will take a deep technical look at the testing framework. We will look at the idea behind it, and we will have a detailed look at all elements of the testing framework. You could use this as a reference for when you are going to use this framework, but you could also use this as inspiration if you are going to build something like this.
 
